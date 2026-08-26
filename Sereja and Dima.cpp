@@ -40,4 +40,5 @@ int main() {
         index = 1-index;
     }
     cout << a_player << " "<< b_player << endl;
+    return 0;
 }

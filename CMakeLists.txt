@@ -12,4 +12,11 @@ add_executable(first_test main.cpp
         Koshary.cpp
         "Sereja and Dima.cpp"
         Twins.cpp
+        "Greatest Common Factor.cpp"
+        FrequancyArray.cpp
+        TargetSum.cpp
+        PrefixArray.cpp
+        BiggerLetter.cpp
+        "Brr Brrr Patapim.cpp"
+        Dragons.cpp
 )
