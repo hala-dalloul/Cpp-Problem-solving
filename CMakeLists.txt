@@ -19,4 +19,5 @@ add_executable(first_test main.cpp
         BiggerLetter.cpp
         "Brr Brrr Patapim.cpp"
         Dragons.cpp
+        Add.cpp
 )
