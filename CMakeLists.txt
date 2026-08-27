@@ -20,4 +20,5 @@ add_executable(first_test main.cpp
         "Brr Brrr Patapim.cpp"
         Dragons.cpp
         Add.cpp
+        Print.cpp
 )
