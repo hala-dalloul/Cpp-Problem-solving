@@ -5,15 +5,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 1000;
-int main() {
-    int n;
-    if (n > MAXN) {
-        cin>>n;
-        while (n--) {
-            cout<<n<<" ";
+void printFunction(int n) {
+    if (n <= MAXN) {
+        for (int i = 1; i < n+1; i++) {
+            cout<<i;
         }
     }
-
-
+}
+int main() {
+    int n;
+    cin>>n;
+    printFunction(n);
     return 0;
 }
+
