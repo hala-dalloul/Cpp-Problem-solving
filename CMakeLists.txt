@@ -21,4 +21,6 @@ add_executable(first_test main.cpp
         Dragons.cpp
         Add.cpp
         Print.cpp
+        "Wonderful Number.cpp"
+        "Print Number.cpp"
 )
