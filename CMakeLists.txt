@@ -25,4 +25,7 @@ add_executable(first_test main.cpp
         "Print Number.cpp"
         Conditions.cpp
         Negative.cpp
+        Equation.cpp
+        "Could you sort them.cpp"
+        Product.cpp
 )
