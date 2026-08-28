@@ -23,4 +23,6 @@ add_executable(first_test main.cpp
         Print.cpp
         "Wonderful Number.cpp"
         "Print Number.cpp"
+        Conditions.cpp
+        Negative.cpp
 )
