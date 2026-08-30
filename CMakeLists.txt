@@ -28,4 +28,16 @@ add_executable(first_test main.cpp
         Equation.cpp
         "Could you sort them.cpp"
         Product.cpp
+        "Characters in Ascii.cpp"
+        Calculator.cpp
+        Valid.cpp
+        "Large Digits.cpp"
+        "Four Digits.cpp"
+        "Five Variables.cpp"
+        "Wide Awake.cpp"
+        "Too easy problems.cpp"
+        TowPointer.cpp
+        "Merging Arrays.cpp"
+        "Number of smaller.cpp"
+        "Binary Search.cpp"
 )
