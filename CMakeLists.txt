@@ -43,4 +43,5 @@ add_executable(first_test main.cpp
         "Closest to the Left.cpp"
         "Fast search.cpp"
         "Pair of Topics.cpp"
+        "Interesting drink .cpp"
 )
