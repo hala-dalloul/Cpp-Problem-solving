@@ -44,4 +44,8 @@ add_executable(first_test main.cpp
         "Fast search.cpp"
         "Pair of Topics.cpp"
         "Interesting drink .cpp"
+        Worms.cpp
+        "Vanya and Lanterns .cpp"
+        "K-th Not Divisible by n.cpp"
+        "Bubble sort.cpp"
 )
