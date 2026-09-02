@@ -48,4 +48,6 @@ add_executable(first_test main.cpp
         "Vanya and Lanterns .cpp"
         "K-th Not Divisible by n.cpp"
         "Bubble sort.cpp"
+        "Substrings Sort.cpp"
+        "Is B a subsequence of A .cpp"
 )
