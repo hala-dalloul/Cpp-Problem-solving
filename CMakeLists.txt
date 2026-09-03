@@ -50,4 +50,6 @@ add_executable(first_test main.cpp
         "Bubble sort.cpp"
         "Substrings Sort.cpp"
         "Is B a subsequence of A .cpp"
+        "Diverse Team.cpp"
+        "Equal Sums.cpp"
 )
