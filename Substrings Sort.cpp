@@ -39,9 +39,9 @@ int main() {
     }
 
     if (ok) {
-        cout << "Yes" << endl;
+        cout << "YES" << endl;
         for (int i = 0; i < n; i++) cout << s[i] << endl;
     } else {
-        cout << "No" << endl;
+        cout << "NO" << endl;
     }
 }
