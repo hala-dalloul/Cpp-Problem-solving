@@ -52,4 +52,6 @@ add_executable(first_test main.cpp
         "Is B a subsequence of A .cpp"
         "Diverse Team.cpp"
         "Equal Sums.cpp"
+        MainTest.cpp
+        "Kuriyama Mirai's Stones.cpp"
 )
