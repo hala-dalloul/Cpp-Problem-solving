@@ -67,4 +67,8 @@ add_executable(first_test main.cpp
         "Palindrome Array.cpp"
         "Smallest Pair.cpp"
         "Max Subarray.cpp"
+        "Replace MinMax.cpp"
+        "Check Code.cpp"
+        Fibonacci.cpp
+        "Minimize Number.cpp"
 )
