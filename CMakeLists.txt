@@ -54,4 +54,17 @@ add_executable(first_test main.cpp
         "Equal Sums.cpp"
         MainTest.cpp
         "Kuriyama Mirai's Stones.cpp"
+        Sorting.cpp
+        "Sum Digits.cpp"
+        "Sort Array With Binary Search.cpp"
+        "Count Subarrays.cpp"
+        Summation.cpp
+        Searching.cpp
+        Replacement.cpp
+        "Positions in array.cpp"
+        "Lowest Number.cpp"
+        Reversing.cpp
+        "Palindrome Array.cpp"
+        "Smallest Pair.cpp"
+        "Max Subarray.cpp"
 )
