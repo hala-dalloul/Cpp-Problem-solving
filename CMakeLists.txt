@@ -78,4 +78,5 @@ add_executable(first_test main.cpp
         " Easy Number Challenge.cpp"
         "Create A New String.cpp"
         8-Neighbors.cpp
+        "Boy or Girl.cpp"
 )

@@ -15,9 +15,9 @@
             }
         }
 
-        for (int i = 0; i < n / 2; i++) {
-            for (int j = 0; j < m; j++) {
-                swap(matrix[i][j], matrix[n - 1 - i][j]);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j< m/2; j++) {
+                swap(matrix[i][j],matrix[i][m-1-j]);
             }
         }
         for (int i = 0; i < n; i++) {
