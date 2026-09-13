@@ -13,7 +13,7 @@ int main() {
     bool f = true;
     if (a+b+1 == s.length() and a == s.find('-')) {
         for (int i=0;i<a+b+1;i++) {
-            if (i == a) continue;
+            if (i == a) continue; // this is index for - dash
             if (!(s[i] >= '0' and s[i] <= '9')) f = false;
         }
 
