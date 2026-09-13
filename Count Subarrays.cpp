@@ -9,32 +9,29 @@ int main () {
     while (t--) {
         int n;
         cin >> n;
-
+        int count = 0;
         if (n>=1 and n<=100) {
             vector<int> a(n);
-            int count = n;
-            bool flag = false;
-            for (int i=0;i<n;i++) {
-                cin >> a[i];
-            }
 
-            for (int i=0;i<n-1;i++) {
-                if (a[i] < a[i+1] ) {
-                    for (int j=i+1;j<n;j++) {
-                        if (a[j] < a[i+1]) {
-                            flag = true;
-                            count++;
-                        }else {
+            for (int i=0;i<n;i++) cin >> a[i];
+
+            for (int i=0;i<n;i++) {
+                for (int j=i;j<n;j++) {
+                    bool flag = true;
+                    for (int k=i+1;k<=j;k++) {
+                        if (a[k-1] > a[k]) {
                             flag = false;
+                            break;
                         }
                     }
-                    count ++;
-                }else {
-                    continue;
+                    if (flag) {
+                        ++count;
+                    }
                 }
             }
-        cout << count << endl;
+
         }
+        cout << count << endl;
     }
     return 0;
 }

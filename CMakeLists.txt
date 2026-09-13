@@ -71,4 +71,11 @@ add_executable(first_test main.cpp
         "Check Code.cpp"
         Fibonacci.cpp
         "Minimize Number.cpp"
+        "Permutation with arrays.cpp"
+        "Search In Matrix.cpp"
+        Matrix.cpp
+        "Mirror Array.cpp"
+        " Easy Number Challenge.cpp"
+        "Create A New String.cpp"
+        8-Neighbors.cpp
 )
