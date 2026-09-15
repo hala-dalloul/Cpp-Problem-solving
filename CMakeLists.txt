@@ -79,4 +79,15 @@ add_executable(first_test main.cpp
         "Create A New String.cpp"
         8-Neighbors.cpp
         "Boy or Girl.cpp"
+        "Let's use Getline.cpp"
+        Compare.cpp
+        Strings.cpp
+        Count.cpp
+        "Way Too Long Words.cpp"
+        Conversion.cpp
+        "Good or Bad.cpp"
+        Palindrome.cpp
+        "Count Letters.cpp"
+        "I Love strings.cpp"
+        "String Functions.cpp"
 )
