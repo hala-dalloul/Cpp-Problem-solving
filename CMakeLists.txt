@@ -90,4 +90,8 @@ add_executable(first_test main.cpp
         "Count Letters.cpp"
         "I Love strings.cpp"
         "String Functions.cpp"
+        Divisors.cpp
+        "Subsequence String.cpp"
+        "Sort String.cpp"
+        "Count Words.cpp"
 )
