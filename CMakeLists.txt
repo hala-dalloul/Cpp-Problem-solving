@@ -94,4 +94,15 @@ add_executable(first_test main.cpp
         "Subsequence String.cpp"
         "Sort String.cpp"
         "Count Words.cpp"
+        "Max Subsequence.cpp"
+        "Reverse Words.cpp"
+        "String Score.cpp"
+        "Potions (Easy Version).cpp"
+        "They Are Everywhere.cpp"
+        Queue.cpp
+        "Cut It From the Left.cpp"
+        "Equal Distribution.cpp"
+        "Fibonacci Sequence.cpp"
+        "Great XOR.cpp"
+        "Save Sa7afy.cpp"
 )
