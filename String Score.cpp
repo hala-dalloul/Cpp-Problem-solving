@@ -16,39 +16,29 @@ int main() {
     while (i < s.length()) {
         if (s[i] == 'V') {
             score+= 5;
-            i++;
         }
         else if (s[i] == 'Y' and i < s.length()-1) {
             if (i+1 < s.length()-1) {
-                char p = s[i+1];
-                s.erase(i+1,1);
-                s.push_back(p);
+                s.push_back(s[i+1]);
+                i++;
             }
-            i++;
         }
         else if (s[i] == 'X' and i < s.length()-1) {
-            s.erase(i+1,1);
             i++;
-            continue;
         }
         else if (s[i] == 'W') {
             score+=2;
-            i++;
         }
         else if (s[i] == 'Z' and i < s.length()-1) {
             if (s[i+1] == 'W') {
                 score/=2;
-                s.erase(i,1);
+                i++;
             }else if (s[i+1] == 'V') {
                 score/=5;
-                s.erase(i,1);
-            }else {
                 i++;
             }
         }
-        else {
-            i++;
-        }
+        i++;
     }
     cout << score;
 

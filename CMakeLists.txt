@@ -105,4 +105,5 @@ add_executable(first_test main.cpp
         "Fibonacci Sequence.cpp"
         "Great XOR.cpp"
         "Save Sa7afy.cpp"
+        "Max Split.cpp"
 )
