@@ -11,23 +11,46 @@ int main() {
     string s;
     cin>>setw(n)>>s;
     int score = 0;
-    for (int i=0; i<n; i++) {
+    // WZYVXW
+    int i = 0;
+    while (i < s.length()) {
         if (s[i] == 'V') {
             score+= 5;
+            i++;
         }
-        if (s[i] == 'W') {
-            swap(s[i],s[s.length()-1]);
+        else if (s[i] == 'Y' and i < s.length()-1) {
+            if (i+1 < s.length()-1) {
+                char p = s[i+1];
+                s.erase(i+1,1);
+                s.push_back(p);
+            }
+            i++;
         }
-        if (s[i] == 'X') {
-
+        else if (s[i] == 'X' and i < s.length()-1) {
+            s.erase(i+1,1);
+            i++;
+            continue;
         }
-        if (s[i] == 'Z') {}
+        else if (s[i] == 'W') {
+            score+=2;
+            i++;
+        }
+        else if (s[i] == 'Z' and i < s.length()-1) {
+            if (s[i+1] == 'W') {
+                score/=2;
+                s.erase(i,1);
+            }else if (s[i+1] == 'V') {
+                score/=5;
+                s.erase(i,1);
+            }else {
+                i++;
+            }
+        }
+        else {
+            i++;
+        }
     }
+    cout << score;
+
     return 0;
 }
-// String S = "VYWZW" and score initially = 0 .
-// First char is 'V' so add 5 to score and become 5.
-// Second char is 'Y' then move 'W' to end of string and it become "VYZWW" and score = 5.
-// Third char is 'Z' then divide total score by 2 because next char is 'W' and remove it so string become "VYZW" and score = 2.
-// Fourth char is 'W' so add 2 to score and become 4.
-// So final answer is 4.
