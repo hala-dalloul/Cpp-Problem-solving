@@ -108,4 +108,10 @@ add_executable(first_test main.cpp
         "Max Split.cpp"
         URL.cpp
         " New Words.cpp"
+        "Replace Word.cpp"
+        "Encrypt & Decrypt Message.cpp"
+        Comparison.cpp
+        Comparison.cpp
+        Comparison.cpp
+        Comparison.cpp
 )
