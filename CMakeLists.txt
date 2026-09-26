@@ -107,11 +107,13 @@ add_executable(first_test main.cpp
         "Save Sa7afy.cpp"
         "Max Split.cpp"
         URL.cpp
-        " New Words.cpp"
         "Replace Word.cpp"
         "Encrypt & Decrypt Message.cpp"
         Comparison.cpp
         Comparison.cpp
         Comparison.cpp
         Comparison.cpp
+        Array.cpp
+        Array.cpp
+        "Team Olympaid.cpp"
 )

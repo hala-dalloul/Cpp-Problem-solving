@@ -14,7 +14,6 @@ int main() {
     int counter = 0;
     for (int i = 0; i < s.length(); i++) {
         char current_char = s[i];
-        cout<<current_char<<"::"<<v[current_char]<<"\n";
         if (v[current_char] == false) {
             v[current_char] = true;
             counter++;
