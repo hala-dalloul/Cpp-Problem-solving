@@ -1,0 +1,32 @@
+name: Solution proposal
+description: Propose a new problem solution or algorithm improvement.
+title: "[Solution]: "
+labels: [enhancement]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Problem name
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Problem source or URL
+      description: Leave blank if the problem has no public source.
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach
+      description: Summarize the algorithm and its time and space complexity.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the repository for an existing solution.
+          required: true
+        - label: I have the right to contribute this code under the MIT License.
+          required: true

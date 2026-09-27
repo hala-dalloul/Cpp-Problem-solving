@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a compilation error or incorrect solution output.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve the solutions.
+  - type: input
+    id: solution
+    attributes:
+      label: Solution file
+      placeholder: Binary Search.cpp
+    validations:
+      required: true
+  - type: input
+    id: compiler
+    attributes:
+      label: Compiler
+      placeholder: GCC 14.2 with -std=c++17
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem description
+      description: Explain the compilation error or incorrect behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input used
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected output
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output or error
+      render: text
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched for an existing issue about this problem.
+          required: true
+        - label: This is not a private security report.
+          required: true
