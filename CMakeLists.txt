@@ -36,5 +36,7 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
     string(SUBSTRING "${target_suffix}" 0 8 target_suffix)
     add_executable("${target_name}_${target_suffix}" "${source_file}"
             greedy/potions_hard_version.cpp
-            stack/this_true_stack.cpp)
+            stack/this_true_stack.cpp
+            stack/test.cpp
+            function/wonder_number.cpp)
 endforeach()
