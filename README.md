@@ -17,7 +17,24 @@ A growing collection of standalone C++ solutions for algorithms, data structures
 
 ## Repository layout
 
-Each `.cpp` file is an independent program with its own `main` function. File names generally match the problem or concept being practiced. Generated executables and local build directories are intentionally not tracked.
+Each `.cpp` file is an independent program with its own `main` function. Solutions are grouped by topic:
+
+```text
+arrays/            Array manipulation and traversal
+basics/            Input, output, conditions, and introductory exercises
+data-structures/   Standard data-structure practice
+greedy/            Greedy algorithms and selection strategies
+mathematics/       Number theory and mathematical problems
+matrices/          Grids and two-dimensional arrays
+prefix-sums/       Prefix-sum techniques
+searching/         Binary search and lookup problems
+simulation/        Step-by-step process simulation
+sorting/           Sorting algorithms and ordering problems
+strings/           String processing and text problems
+two-pointers/      Two-pointer techniques
+```
+
+Generated executables and local build directories are intentionally not tracked.
 
 ## Getting started
 
@@ -26,7 +43,7 @@ You need a C++17-compatible compiler such as GCC, Clang, or MSVC.
 ```bash
 git clone https://github.com/hala-dalloul/Cpp-Problem-solving.git
 cd Cpp-Problem-solving
-g++ "Binary Search.cpp" -std=c++17 -O2 -Wall -Wextra -o solution
+g++ "searching/Binary Search.cpp" -std=c++17 -O2 -Wall -Wextra -o solution
 ./solution
 ```
 

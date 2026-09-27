@@ -25,7 +25,7 @@ jobs:
             if ! g++ -std=c++17 -fsyntax-only -Wall -Wextra -pedantic "$source"; then
               failed=1
             fi
-          done < <(find . -maxdepth 1 -name '*.cpp' -print0 | sort -z)
+          done < <(find arrays basics data-structures greedy mathematics matrices prefix-sums searching simulation sorting strings two-pointers -type f -name '*.cpp' -print0 | sort -z)
           exit "$failed"
 
   cmake-configure:

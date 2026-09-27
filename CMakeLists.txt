@@ -6,7 +6,28 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-file(GLOB SOLUTION_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+set(SOLUTION_DIRECTORIES
+    arrays
+    basics
+    data-structures
+    greedy
+    mathematics
+    matrices
+    prefix-sums
+    searching
+    simulation
+    sorting
+    strings
+    two-pointers
+)
+
+set(SOLUTION_SOURCES)
+foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
+    file(GLOB directory_sources CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/${solution_directory}/*.cpp"
+    )
+    list(APPEND SOLUTION_SOURCES ${directory_sources})
+endforeach()
 
 foreach(source_file IN LISTS SOLUTION_SOURCES)
     get_filename_component(solution_name "${source_file}" NAME_WE)
