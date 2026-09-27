@@ -34,5 +34,6 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
     string(MAKE_C_IDENTIFIER "${solution_name}" target_name)
     string(MD5 target_suffix "${source_file}")
     string(SUBSTRING "${target_suffix}" 0 8 target_suffix)
-    add_executable("${target_name}_${target_suffix}" "${source_file}")
+    add_executable("${target_name}_${target_suffix}" "${source_file}"
+            greedy/potions_hard_version.cpp)
 endforeach()

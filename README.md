@@ -43,7 +43,7 @@ You need a C++17-compatible compiler such as GCC, Clang, or MSVC.
 ```bash
 git clone https://github.com/hala-dalloul/Cpp-Problem-solving.git
 cd Cpp-Problem-solving
-g++ "searching/Binary Search.cpp" -std=c++17 -O2 -Wall -Wextra -o solution
+g++ searching/binary_search.cpp -std=c++17 -O2 -Wall -Wextra -o solution
 ./solution
 ```
 
