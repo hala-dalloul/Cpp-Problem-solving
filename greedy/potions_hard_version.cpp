@@ -11,8 +11,8 @@ int main() {
 
     int n;
     cin >> n;
-    int sum = 0,counter = 0;
-    priority_queue<int, vector<int>, greater<>> pq;
+    long long sum = 0,counter = 0;
+    priority_queue<long long, vector<long long>, greater<>> pq;
     for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
