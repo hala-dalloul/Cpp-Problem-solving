@@ -9,7 +9,7 @@ int main() {
     cout.tie(NULL);
 
     //
-    string z = "(()()())";
+    string z = "()()((()))";
     stack<string> x;
     for (int i = 0; i < z.size(); i++) {
         if (z[i] == '(') {
@@ -18,7 +18,7 @@ int main() {
             x.pop();
         }
     }
-    if (x.size() > 0) {
+    if (!x.empty()) {
         cout << "not perfect stack";
     }else {
         cout << "perfect stack";
