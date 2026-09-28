@@ -38,5 +38,13 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             greedy/potions_hard_version.cpp
             stack/this_true_stack.cpp
             stack/test.cpp
-            function/wonder_number.cpp)
+            function/wonder_number.cpp
+            function/swap.cpp
+            function/equation.cpp
+            function/max_and_min.cpp
+            function/n_times.cpp
+            function/average.cpp
+            function/swapping_with_matrix.cpp
+            function/shift_right.cpp
+            function/new_array.cpp)
 endforeach()
