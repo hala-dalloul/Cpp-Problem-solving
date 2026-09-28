@@ -45,5 +45,6 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             function/average.cpp
             function/swapping_with_matrix.cpp
             function/shift_right.cpp
-            function/new_array.cpp)
+            function/new_array.cpp
+            function/distinct_numbers.cpp)
 endforeach()
