@@ -47,5 +47,7 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             function/shift_right.cpp
             function/new_array.cpp
             function/distinct_numbers.cpp
-            function/shift_zeros.cpp)
+            function/shift_zeros.cpp
+            function/gravity_flip.cpp
+            stack/launch_of_collider.cpp)
 endforeach()
