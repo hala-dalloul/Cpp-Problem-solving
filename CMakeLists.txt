@@ -49,5 +49,6 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             function/distinct_numbers.cpp
             function/shift_zeros.cpp
             function/gravity_flip.cpp
-            stack/launch_of_collider.cpp)
+            stack/launch_of_collider.cpp
+            tanya_and_stairways.cpp)
 endforeach()
