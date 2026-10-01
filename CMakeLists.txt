@@ -51,5 +51,6 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             function/gravity_flip.cpp
             stack/launch_of_collider.cpp
             tanya_and_stairways.cpp
-            angry_students.cpp)
+            angry_students.cpp
+            jzzhu_and_children.cpp)
 endforeach()
