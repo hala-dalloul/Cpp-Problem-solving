@@ -50,5 +50,6 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             function/shift_zeros.cpp
             function/gravity_flip.cpp
             stack/launch_of_collider.cpp
-            tanya_and_stairways.cpp)
+            tanya_and_stairways.cpp
+            angry_students.cpp)
 endforeach()
