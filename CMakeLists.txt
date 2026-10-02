@@ -52,5 +52,17 @@ foreach(source_file IN LISTS SOLUTION_SOURCES)
             stack/launch_of_collider.cpp
             tanya_and_stairways.cpp
             angry_students.cpp
-            jzzhu_and_children.cpp)
+            jzzhu_and_children.cpp
+            card_deck.cpp
+            word_capitalization.cpp
+            coins.cpp
+            anton_and_letters.cpp
+            square.cpp
+            your_name.cpp
+            "In Search of an Easy Problem.cpp"
+            twins.cpp
+            "Odd One Out.cpp"
+            little_C_Loves_3_l.cpp
+            division.cpp
+            odd_queries.cpp)
 endforeach()
