@@ -22,14 +22,18 @@ Each `.cpp` file is an independent program with its own `main` function. Solutio
 ```text
 arrays/            Array manipulation and traversal
 basics/            Input, output, conditions, and introductory exercises
+contest-959/       Mahmoud and Ehab contest solutions
 data-structures/   Standard data-structure practice
+function/          Functions and reusable calculations
 greedy/            Greedy algorithms and selection strategies
+KCPC 2023/         KCPC 2023 contest solutions
 mathematics/       Number theory and mathematical problems
 matrices/          Grids and two-dimensional arrays
 prefix-sums/       Prefix-sum techniques
 searching/         Binary search and lookup problems
 simulation/        Step-by-step process simulation
 sorting/           Sorting algorithms and ordering problems
+stack/             Stack and bracket-sequence problems
 strings/           String processing and text problems
 two-pointers/      Two-pointer techniques
 ```

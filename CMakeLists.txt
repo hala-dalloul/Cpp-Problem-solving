@@ -7,9 +7,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(SOLUTION_DIRECTORIES
+    "KCPC 2023"
     arrays
     basics
+    contest-959
     data-structures
+    function
     greedy
     mathematics
     matrices
@@ -17,52 +20,21 @@ set(SOLUTION_DIRECTORIES
     searching
     simulation
     sorting
+    stack
     strings
     two-pointers
 )
 
-set(SOLUTION_SOURCES)
 foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
     file(GLOB directory_sources CONFIGURE_DEPENDS
         "${CMAKE_CURRENT_SOURCE_DIR}/${solution_directory}/*.cpp"
     )
-    list(APPEND SOLUTION_SOURCES ${directory_sources})
-endforeach()
 
-foreach(source_file IN LISTS SOLUTION_SOURCES)
-    get_filename_component(solution_name "${source_file}" NAME_WE)
-    string(MAKE_C_IDENTIFIER "${solution_name}" target_name)
-    string(MD5 target_suffix "${source_file}")
-    string(SUBSTRING "${target_suffix}" 0 8 target_suffix)
-    add_executable("${target_name}_${target_suffix}" "${source_file}"
-            greedy/potions_hard_version.cpp
-            stack/this_true_stack.cpp
-            function/wonder_number.cpp
-            function/swap.cpp
-            function/equation.cpp
-            function/max_and_min.cpp
-            function/n_times.cpp
-            function/average.cpp
-            function/swapping_with_matrix.cpp
-            function/shift_right.cpp
-            function/new_array.cpp
-            function/distinct_numbers.cpp
-            function/shift_zeros.cpp
-            function/gravity_flip.cpp
-            stack/launch_of_collider.cpp
-            tanya_and_stairways.cpp
-            angry_students.cpp
-            jzzhu_and_children.cpp
-            card_deck.cpp
-            word_capitalization.cpp
-            coins.cpp
-            anton_and_letters.cpp
-            square.cpp
-            your_name.cpp
-            "In Search of an Easy Problem.cpp"
-            twins.cpp
-            "Odd One Out.cpp"
-            little_C_Loves_3_l.cpp
-            division.cpp
-            odd_queries.cpp)
+    foreach(source_file IN LISTS directory_sources)
+        get_filename_component(solution_name "${source_file}" NAME_WE)
+        string(MAKE_C_IDENTIFIER "${solution_name}" target_name)
+        string(MD5 target_suffix "${source_file}")
+        string(SUBSTRING "${target_suffix}" 0 8 target_suffix)
+        add_executable("${target_name}_${target_suffix}" "${source_file}")
+    endforeach()
 endforeach()

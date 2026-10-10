@@ -1,46 +1,33 @@
 //
-// Created by hp on 1/9/2026.
+// Created by hp on 8/10/2026.
 //
-
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     int n;
-    cin>>n;
-    vector<int> v(n);
-    for (int i=0;i<n;i++) cin>>v[i];
-    int k;
-    cin>>k;
-    sort(v.begin(),v.end());
-    while (k--) {
-        int border_l, border_r;
-        cin>>border_l>>border_r;
-        int index_l=n,index_r=n;
+    cin >> n;
+    vector<int> a(n), b(n), c(n);
+    for (int i = 0; i < n; i++) cin >> a[i];
+    for (int i = 0; i < n; i++) cin >> b[i];
+    for (int i = 0; i < a.size(); i++) { c[i] = (a[i] - b[i]); }
 
-        int l=0,r=n-1;
-        while (l<=r) {
-            int mid=(l+r)/2;
-            if (border_l<=v[mid]) {
-                index_l=mid;
-                r=mid-1;
-            }else {
-                l=mid+1;
-            }
+    sort(c.begin(), c.end());
+    int left = 0, right = c.size() - 1;
+    long long ans = 0;
+
+    while (left < right) {
+        if (c[left] + c[right] > 0) {
+            ans += right - left;
+            right--;
+        } else {
+            left++;
         }
-        l=0,r=n-1;
-        while (l<=r) {
-            int mid=(l+r)/2;
-            if (border_r<v[mid]) {
-                index_r=mid;
-                r=mid-1;
-            }else {
-                l=mid+1;
-            }
-        }
-        cout<<index_r-index_l<<" ";
     }
-
+    cout << ans;
     return 0;
 }
