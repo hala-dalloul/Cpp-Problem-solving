@@ -36,6 +36,7 @@ foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
         string(MD5 target_suffix "${source_file}")
         string(SUBSTRING "${target_suffix}" 0 8 target_suffix)
         add_executable("${target_name}_${target_suffix}" "${source_file}"
-                "data-structures/C_EqualSums.cpp")
+                "data-structures/C_EqualSums.cpp"
+                basics/A_SauSaGe_Bank.cpp)
     endforeach()
 endforeach()
