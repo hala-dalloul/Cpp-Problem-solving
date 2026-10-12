@@ -37,6 +37,8 @@ foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
         string(SUBSTRING "${target_suffix}" 0 8 target_suffix)
         add_executable("${target_name}_${target_suffix}" "${source_file}"
                 "data-structures/C_EqualSums.cpp"
-                basics/A_SauSaGe_Bank.cpp)
+                basics/A_SauSaGe_Bank.cpp
+                "basics/B_KiaKioAndSquaredNumbers .cpp"
+                data-structures/sum_of_two_values.cpp)
     endforeach()
 endforeach()
