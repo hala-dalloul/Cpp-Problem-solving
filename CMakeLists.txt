@@ -39,6 +39,16 @@ foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
                 "data-structures/C_EqualSums.cpp"
                 basics/A_SauSaGe_Bank.cpp
                 "basics/B_KiaKioAndSquaredNumbers .cpp"
-                data-structures/sum_of_two_values.cpp)
+                data-structures/sum_of_two_values.cpp
+                gym_706478/C_Coach_academy.cpp
+                gym_706478/A_Multiple.cpp
+                gym_706478/B_Plus.cpp
+                f_summarize_to_the_power_of_two.cpp
+                g_minimize_the_error.cpp
+                k_skibidus_and_sigma.cpp
+                number_theiory/a_k-factorization.cpp
+                number_theiory/b_almost_prime.cpp
+                number_theiory/factors_of_factorial.cpp
+                strings/y_amusing_joke.cpp)
     endforeach()
 endforeach()
