@@ -1,32 +1,53 @@
-//
-// Created by hp on 2/10/2026.
-//
 #include <bits/stdc++.h>
 using namespace std;
 
-void go() {
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     int t;
     cin >> t;
-    deque<int> v;
-    for (int i = 0; i < t; i++) {
-        int x;
-        cin >> x;
-        v.push_back(x);
-    }
-    for (int i=v.size()-1; i>=0; i--) {
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        for (int i = 0; i < n; i++) cin >> a[i];
+        vector<int> ans(n);
+        bool ok = true;
 
-    }
-}
+        for (int i = n; i >= 1; i--) {
+            int pos = -1;
 
+            for (int j = 0; j < n; j++) {
+                if (a[j] == i) {
+                    pos = j;
+                    break;
+                }
+            }
+            if (pos >= i) {
+                ok = false;
+                break;
+            }
 
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+            int d;
+            if (pos == i - 1) d = 0;
+            else d = pos + 1;
 
-    int n;
-    cin >> n;
-    while (n--) {
-        go();
+            ans[i - 1] = d;
+            if (d > 0) {
+                vector<int> old = a;
+                for (int j = 0; j < i; j++) {
+                    a[j] = old[(j + d) % i];
+                }
+            }
+        }
+
+        if (!ok) {
+            cout << -1 << '\n';
+        } else {
+            for (int i = 0; i < n; i++) {
+                cout << ans[i] << " \n"[i == n - 1];
+            }
+        }
     }
 
     return 0;
