@@ -49,6 +49,10 @@ foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
                 number_theiory/a_k-factorization.cpp
                 number_theiory/b_almost_prime.cpp
                 number_theiory/factors_of_factorial.cpp
-                strings/y_amusing_joke.cpp)
+                strings/y_amusing_joke.cpp
+                data-structures/cd_and_pwd_commands.cpp
+                data-structures/catch_overflow.cpp
+                function/prime_function.cpp
+                function/translation.cpp)
     endforeach()
 endforeach()
