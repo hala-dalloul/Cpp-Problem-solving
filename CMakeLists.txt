@@ -53,6 +53,7 @@ foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
                 data-structures/cd_and_pwd_commands.cpp
                 data-structures/catch_overflow.cpp
                 function/prime_function.cpp
-                function/translation.cpp)
+                function/translation.cpp
+                strings/string_ordaring.cpp)
     endforeach()
 endforeach()
