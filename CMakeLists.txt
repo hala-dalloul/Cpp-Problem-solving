@@ -54,6 +54,7 @@ foreach(solution_directory IN LISTS SOLUTION_DIRECTORIES)
                 data-structures/catch_overflow.cpp
                 function/prime_function.cpp
                 function/translation.cpp
-                strings/string_ordaring.cpp)
+                strings/string_ordaring.cpp
+                word_ordering.cpp)
     endforeach()
 endforeach()
